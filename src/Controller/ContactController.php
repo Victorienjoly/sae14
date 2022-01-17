@@ -6,15 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class JolyController extends AbstractController
+class ContactController extends AbstractController
 {
     /**
-     * @Route("", name="joly")
+     * @Route("/contact", name="contact")
      */
     public function index(): Response
     {
-        return $this->render('joly/index.html.twig', [
-            'controller_name' => 'JolyController',
+        return $this->render('contact/index.html.twig', [
+            'controller_name' => 'ContactController',
         ]);
     }
 }
